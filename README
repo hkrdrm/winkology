@@ -1,0 +1,15 @@
+Parts
+ -Directory Parser
+
+Documentation
+ 
+------------------------------
+/incoming = where the original ~4000 releases will be stored before being parsed, relocated and into mysql. also /incoming is where i will upload new releases to be processed (cron)
+
+for each directory
+ store original release name (original folder name)
+ store pretty release name with correct capitalization, no -groupname and no .'s or _'s
+ store filenames inside of each directory where you'll know the name to link for the download and the .nfo for the viewer
+ mv original folder + contents from /incoming to /archive
+
+/archive = where releases will go after beinged processed from /incoming.  also, this is where the download script will send the file from
